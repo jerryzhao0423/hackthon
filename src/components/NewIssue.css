@@ -1,0 +1,27 @@
+.ni-header{
+    position: absolute;
+    height: 50px;
+    width: calc(100% - 32px);
+    top: 90px;
+    left: 0;
+    padding: 7px 0 7px 32px;
+    background-color: #011f65;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.ni-body{
+    position: absolute;
+    top: 160px;
+
+
+}
+
+.ni-select{
+
+}
+
+.ni-option{
+
+}

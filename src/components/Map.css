@@ -1,0 +1,10 @@
+.map-marker{
+    background-image: url(../static/Pin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
