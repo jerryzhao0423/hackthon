@@ -14,6 +14,8 @@
 .ni-body{
     position: absolute;
     top: 160px;
+    left: 0;
+    width: 100%;
 
 
 }
@@ -24,4 +26,48 @@
 
 .ni-option{
 
+}
+
+.ni-label{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.ni-input{
+    width: calc(100% - 12px);
+    border: none;
+    border-bottom: 1px solid #c1c1c7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 8px 0 8px 12px;
+}
+.ni-input:focus{
+    outline: none;
+}
+.ni-textarea{
+    width: calc(100% - 12px);
+    height: 120px;
+    border: none;
+    border-top: 1px solid #c1c1c7;
+    border-bottom: 1px solid #c1c1c7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 8px 0 8px 12px;
+}
+.ni-textarea:focus{
+    outline: none;
+}
+.ni-button{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    background-color: #011f65;
 }

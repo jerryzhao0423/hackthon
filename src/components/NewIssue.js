@@ -20,21 +20,27 @@ class NewIssue extends Component{
                 <div className='ni-header'>New Issue</div>
                 <div className='ni-body'>
                     <div>
-                        <label>Category</label>
+                        <label className="ni-label">Category</label>
                         <Select className="ni-select" value={selectValue}
                                 clearable={false} optionClassName="ni-option"
                                 onChange={(e)=>{this.setState({ selectValue:e })}}
                                 menuContainerStyle={{width:'110px'}}
-                                options={[{ value: 1, label: '24' },
+                                options={[{ value: 1, label: 'Shelter' },
                                     { value: 2, label: '36' },
                                     { value: 3, label: '48' },
                                     { value: 4, label: '60' },
                                 ]}/>
                     </div>
-                    <div><label>Title</label><input/></div>
-                    <div><label>Pic</label><input type="file" accept="image/*"/></div>
-                    <div><label>Description</label><textarea/></div>
-                    <div><button>Submit</button></div>
+                    <div>
+                        <label className="ni-label">Title</label>
+                        <input className='ni-input' placeholder='Enter a title...'/>
+                    </div>
+                    <div><label className="ni-label">Pic</label><input type="file" accept="image/*"/></div>
+                    <div>
+                        <label className="ni-label">Description</label>
+                        <textarea className='ni-textarea' placeholder='Enter a description...'/>
+                    </div>
+                    <button className="ni-button">Submit</button>
                 </div>
 
 

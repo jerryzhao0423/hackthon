@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import GoogleMap from 'google-map-react';
 import {GOOGLE_API_KEY} from "../actions/api";
+import './Map.css'
 import pin from '../static/Pin.svg'
 
 
@@ -46,8 +47,8 @@ class Map extends Component{
             <div style={{position:'absolute',top:'90px',left:0,height:'calc(100vh - 90px)', width:'100vw'}}>
                 <GoogleMap bootstrapURLKeys={{key: GOOGLE_API_KEY,}}
                            center={[43.6543, -79.3860]}
-                           zoom={18} options={this.createMapOptions}>
-                    <Marker lat={43.6543} lng={-79.3860} text={123}/>
+                           zoom={17} options={this.createMapOptions}>
+                    <Marker lat={43.6543} lng={-79.3860}/>
                 </GoogleMap>
             </div>
         )
