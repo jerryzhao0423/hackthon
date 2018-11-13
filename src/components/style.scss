@@ -1,0 +1,81 @@
+.nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 100vw;
+  background-color: #011e3d;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  box-shadow: rgba(255, 255, 255, 0.44) -10px -3px 6px 3px;
+  z-index: 4500;
+}
+
+.nav-list{
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.nav-item {
+  position: relative;
+  bottom:17px;
+  display: inline-block;
+  height: 100%;
+  padding: 30px 10px;
+}
+.nav-item:hover {
+  color: white;
+  background-color: rgb(79, 87, 101);
+  text-decoration: none;
+}
+.nav-item.disabled {
+  color: white;
+  background-color: rgb(79, 87, 101);
+  text-decoration: none;
+  cursor: default
+}
+.nav-item.fixed:hover {
+  color: white;
+  outline: none;
+  background-color: rgb(79, 87, 101);
+}
+.nav-item.active {
+  cursor: default;
+  outline: none;
+  color: white;
+  background-color: rgb(79, 87, 101);
+}
+.nav-item:focus {
+  outline: none;
+}
+.nav-link {
+  position: relative;
+  color:inherit;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: white;
+  background-color: rgb(79, 87, 101);
+  text-decoration: none;
+}
+.nav-link.disabled {
+  color: white;
+  background-color: rgb(79, 87, 101);
+  text-decoration: none;
+  cursor: default
+}
+.nav-link.fixed:hover {
+  color: white;
+  outline: none;
+  background-color: rgb(79, 87, 101);
+}
+.nav-link:focus {
+  outline: none;
+}
